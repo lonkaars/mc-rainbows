@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Command Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./googleSans.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <script src="./libs/jquery-3.3.1.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="mainCard mdl-card mdl-shadow--2dp">
+        <div>
+            <b class="smallHeader">Tekst</b>
+            <form action="#" class="nopadding paddingtop20">
+                <div class="mdl-textfield mdl-js-textfield nopadding fullSize">
+                    <textarea class="mdl-textfield__input noresize nopadding fullSize googleSansNormal" type="text" rows="4" id="textToCommand"></textarea>
+                    <label class="mdl-textfield__label label fullSize googleSansNormal">Hier kun je je eigen tekstinvoeren</label>
+                </div>
+            </form>
+        </div>
+        <div class="height20"></div>
+        <div>
+            <b class="smallHeader">Kleuren</b>
+            <div class="grid-container">
+                <div>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" id="colorsButton1" checked>
+                        <span class="mdl-radio__label googleSansNormal">Regenboog</span>
+                    </label>
+                    <br>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                        <input type="radio" id="option-2" class="mdl-radio__button" name="options" id="colorsButton2" value="2">
+                        <span class="mdl-radio__label googleSansNormal">Tussen 2 kleuren:</span>
+                    </label>
+                    <br>
+                    <div class="colorOptionContainer">
+                        <div class="colorOption">
+                            <p class="nomargin inline googleSansNormal align-middle font-12pt" id="color1Element">Kleur 1</p>
+                            <button id="color1" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </button>
+                            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="color1">
+                                <li class="mdl-menu__item" onclick="setColor1_Dark_Red()">
+                                    <p class="googleSansNormal displayInline">Dark Red</p>
+                                    <div class="dark-red-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Red()">
+                                    <p class="googleSansNormal displayInline">Red</p>
+                                    <div class="red-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Gold()">
+                                    <p class="googleSansNormal displayInline">Gold</p>
+                                    <div class="gold-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Yellow()">
+                                    <p class="googleSansNormal displayInline">Yellow</p>
+                                    <div class="yellow-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Dark_Green()">
+                                    <p class="googleSansNormal displayInline">Dark Green</p>
+                                    <div class="dark-green-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Green()">
+                                    <p class="googleSansNormal displayInline">Green</p>
+                                    <div class="green-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Aqua()">
+                                    <p class="googleSansNormal displayInline">Aqua</p>
+                                    <div class="aqua-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Dark_Aqua()">
+                                    <p class="googleSansNormal displayInline">Dark Aqua</p>
+                                    <div class="dark-aqua-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Dark_Blue()">
+                                    <p class="googleSansNormal displayInline">Dark Blue</p>
+                                    <div class="dark-blue-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Blue()">
+                                    <p class="googleSansNormal displayInline">Blue</p>
+                                    <div class="blue-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Light_Purple()">
+                                    <p class="googleSansNormal displayInline">Light Purple</p>
+                                    <div class="light-purple-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Dark_Purple()">
+                                    <p class="googleSansNormal displayInline">Dark Purple</p>
+                                    <div class="dark-purple-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_White()">
+                                    <p class="googleSansNormal displayInline">White</p>
+                                    <div class="white-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Gray()">
+                                    <p class="googleSansNormal displayInline">Gray</p>
+                                    <div class="gray-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Dark_Gray()">
+                                    <p class="googleSansNormal displayInline">Dark Gray</p>
+                                    <div class="dark-gray-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor1_Black()">
+                                    <p class="googleSansNormal displayInline">Black</p>
+                                    <div class="black-sq color-sq displayInline floatRight"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="colorOption">
+                            <p class="nomargin inline googleSansNormal align-middle font-12pt" id="color2Element">Kleur 2</p>
+                            <button id="color2" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </button>
+                            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="color2">
+                                <li class="mdl-menu__item" onclick="setColor2_Dark_Red()">
+                                    <p class="googleSansNormal displayInline">Dark Red</p>
+                                    <div class="dark-red-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Red()">
+                                    <p class="googleSansNormal displayInline">Red</p>
+                                    <div class="red-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Gold()">
+                                    <p class="googleSansNormal displayInline">Gold</p>
+                                    <div class="gold-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Yellow()">
+                                    <p class="googleSansNormal displayInline">Yellow</p>
+                                    <div class="yellow-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Dark_Green()">
+                                    <p class="googleSansNormal displayInline">Dark Green</p>
+                                    <div class="dark-green-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Green()">
+                                    <p class="googleSansNormal displayInline">Green</p>
+                                    <div class="green-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Aqua()">
+                                    <p class="googleSansNormal displayInline">Aqua</p>
+                                    <div class="aqua-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Dark_Aqua()">
+                                    <p class="googleSansNormal displayInline">Dark Aqua</p>
+                                    <div class="dark-aqua-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Dark_Blue()">
+                                    <p class="googleSansNormal displayInline">Dark Blue</p>
+                                    <div class="dark-blue-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Blue()">
+                                    <p class="googleSansNormal displayInline">Blue</p>
+                                    <div class="blue-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Light_Purple()">
+                                    <p class="googleSansNormal displayInline">Light Purple</p>
+                                    <div class="light-purple-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Dark_Purple()">
+                                    <p class="googleSansNormal displayInline">Dark Purple</p>
+                                    <div class="dark-purple-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_White()">
+                                    <p class="googleSansNormal displayInline">White</p>
+                                    <div class="white-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Gray()">
+                                    <p class="googleSansNormal displayInline">Gray</p>
+                                    <div class="gray-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Dark_Gray()">
+                                    <p class="googleSansNormal displayInline">Dark Gray</p>
+                                    <div class="dark-gray-sq color-sq displayInline floatRight"></div>
+                                </li>
+                                <li class="mdl-menu__item" onclick="setColor2_Black()">
+                                    <p class="googleSansNormal displayInline">Black</p>
+                                    <div class="black-sq color-sq displayInline floatRight"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                        <input type="radio" id="option-3" class="mdl-radio__button" name="options" id="colorsButton3" value="3">
+                        <span class="mdl-radio__label googleSansNormal">Mijn eigen super<br>hippe JSON array</span>
+                    </label>
+                </div>
+                <div class="divStripe"></div>
+                <div>
+                    <p class="smallHeader normalCases">Zelf een JSON array maken:</p>
+                    <form action="#" class="nopadding paddingtop20">
+                        <div class="mdl-textfield mdl-js-textfield nopadding fullSize">
+                            <textarea class="mdl-textfield__input noresize nopadding fullSize googleSansNormal" type="text" id="customJSONArray" rows="7"></textarea>
+                            <label class="mdl-textfield__label label fullSize googleSansNormal">
+                                [<br>
+                                "Voorbeeld kleur 1",<br>
+                                "Voorbeeld kleur 2",<br>
+                                "Voorbeeld kleur 3"<br>
+                                ]
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="height20"></div>
+        <div class="gridwrapper2">
+            <div>
+                <b class="smallHeader">Type</b>
+                <div style="height: 5px"></div>
+                <div>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type-1">
+                        <input type="radio" id="type-1" class="mdl-radio__button" name="types" value="1" id="typeButton1" checked>
+                        <span class="mdl-radio__label googleSansNormal">/title</span>
+                    </label>
+                    <br>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type-2">
+                        <input type="radio" id="type-2" class="mdl-radio__button" name="types" value="2" id="typeButton2">
+                        <span class="mdl-radio__label googleSansNormal">/tellraw</span>
+                    </label>
+                    <br>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type-3">
+                        <input type="radio" id="type-3" class="mdl-radio__button" name="types" value="3" id="typeButton3">
+                        <span class="mdl-radio__label googleSansNormal">Rauwe array met objects</span>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <b class="smallHeader">To</b>
+                <div style="height: 5px"></div>
+                <form action="#" class="nopadding paddingtop20">
+                    <div class="mdl-textfield mdl-js-textfield nopadding fullSize">
+                        <textarea class="mdl-textfield__input noresize nopadding fullSize googleSansNormal" type="text" rows="1" id="toText"></textarea>
+                        <label class="mdl-textfield__label label fullSize googleSansNormal">@a</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottomRight">
+            <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect generateButton" onclick="generateCommand()">Commando Genereren</a>
+        </div>
+    </div>
+    <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text googleSansNormal"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+</body>
+
+</html>

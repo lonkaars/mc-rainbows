@@ -1,0 +1,193 @@
+body {
+    background-color: rgb(79, 169, 172);
+}
+
+.mainCard {
+    width: 500px;
+    height: 625px;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(200, 242, 243);
+}
+
+.smallHeader {
+    font-family: 'Google Sans Bold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9pt;
+    color: #000000cc;
+}
+
+.generateButton {
+    color: #000000bd;
+    font-family: 'Google Sans Bold', sans-serif;
+    font-weight: 700;
+    text-transform: initial;
+    margin-top: 75px;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.fullSize {
+    width: 100%;
+    height: 100%;
+}
+
+.noresize {
+    resize: none;
+}
+
+.label {
+    top: 0;
+    left: 0;
+    padding: 10 0 0 0
+}
+
+.label::after {
+    bottom: 0;
+}
+
+.paddingtop20 {
+    padding-top: 5px;
+}
+
+.googleSansNormal {
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 400;
+}
+
+.bottomRight {
+    text-align: right;
+    bottom: 0;
+}
+
+.height20 {
+    height: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 45% 6% 49%;
+    padding: 5px;
+}
+
+.divStripe {
+    background-color: #00000055;
+    width: 2px;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.normalCases {
+    text-transform: initial;
+}
+
+.colorOptionContainer {
+    height: 65px;
+    width: 150px;
+    border-radius: 3px;
+    border: 2px solid #00000055;
+    padding: 3px 0px 0px 11px;
+}
+
+.align-middle {
+    vertical-align: middle
+}
+
+.font-12pt {
+    font-size: 12pt;
+}
+
+.color-sq {
+    border-radius: 3px;
+    border: 1px solid #00000055;
+    width: 10px;
+    height: 10px;
+    margin-top: 18px;
+    margin-right: 1px;
+}
+
+.dark-red-sq{
+    background-color: #be0000
+}
+.red-sq{
+    background-color: #fe3f3f
+}
+.gold-sq{
+    background-color: #d9a334
+}
+.yellow-sq{
+    background-color: #fefe3f
+}
+.dark-green-sq{
+    background-color: #00be00
+}
+.green-sq{
+    background-color: #3ffe3f
+}
+.aqua-sq{
+    background-color: #3ffefe
+}
+.dark-aqua-sq{
+    background-color: #00bebe
+}
+.dark-blue-sq{
+    background-color: #0000be
+}
+.blue-sq{
+    background-color: #3f3ffe
+}
+.light-purple-sq{
+    background-color: #fe3ffe
+}
+.dark-purple-sq{
+    background-color: #be00be
+}
+.white-sq{
+    background-color: #ffffff
+}
+.gray-sq{
+    background-color: #bebebe
+}
+.dark-gray-sq{
+    background-color: #3f3f3f
+}
+.black-sq{
+    background-color: #000000
+}
+
+.displayInline {
+    display: inline-block;
+}
+
+.floatRight {
+    float: right;
+}
+
+/* .grid-4-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+} */
+
+.mdl-menu {
+    height: 300px;
+    width: 150px;
+    overflow-y: scroll;
+}
+
+.gridwrapper2 {
+    display: grid;
+    grid-template-columns: 60% 38%;
+}
