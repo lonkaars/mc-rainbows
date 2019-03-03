@@ -9,7 +9,6 @@ You can select rainbow, 2 colors of your choosing or make your own JSON Array fo
 You can also change who the recipient is, and specify a /title, /tellraw or just raw data.
 
 ### Coming soon:
-- Favicon
 - Dark mode toggle
 - English version (currently Dutch)
 
@@ -22,6 +21,5 @@ Je kunt regenboogkleuren, 2 zelf gekozen kleuren of een eigen JSON Array gebruik
 Je kunt ook de ontvanger veranderen, en kiezen tussen een /title, /tellraw of alleen de rauwe data.
 
 ### Binnenkort:
-- Favicon
 - Schakelaar voor donkere modus
 - Engelse versie (voor nu alleen in het Nederlands)
