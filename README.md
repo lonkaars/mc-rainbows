@@ -1,4 +1,5 @@
 # mc-rainbows
+[Open](https://lonkaars.github.io/mc-rainbows)
 
 ## EN
 This is the repository for MRTNTCG*!\
